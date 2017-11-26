@@ -7,23 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5533ADC1FC5E28000F09C2F /* Update_ResponsesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5533ADB1FC5E28000F09C2F /* Update_ResponsesViewController.swift */; };
+		E5533AE01FC6191D00F09C2F /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5533ADF1FC6191D00F09C2F /* ResultsViewController.swift */; };
+		E5533AE21FCB3B5A00F09C2F /* SurveyHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5533AE11FCB3B5A00F09C2F /* SurveyHistoryViewController.swift */; };
+		E5533AE41FCB586900F09C2F /* ViewSurveyRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5533AE31FCB586900F09C2F /* ViewSurveyRecordViewController.swift */; };
 		E5ED86311FC313FD00D8A612 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ED86301FC313FD00D8A612 /* AppDelegate.swift */; };
-		E5ED86331FC313FD00D8A612 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ED86321FC313FD00D8A612 /* ViewController.swift */; };
 		E5ED86361FC313FD00D8A612 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5ED86341FC313FD00D8A612 /* Main.storyboard */; };
 		E5ED86391FC313FD00D8A612 /* Junior_Design_Final_Deliverable.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5ED86371FC313FD00D8A612 /* Junior_Design_Final_Deliverable.xcdatamodeld */; };
 		E5ED863B1FC313FD00D8A612 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5ED863A1FC313FD00D8A612 /* Assets.xcassets */; };
 		E5ED863E1FC313FD00D8A612 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5ED863C1FC313FD00D8A612 /* LaunchScreen.storyboard */; };
+		E5ED86461FC3188E00D8A612 /* FirstLandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ED86451FC3188E00D8A612 /* FirstLandingPageViewController.swift */; };
+		E5ED86481FC326B400D8A612 /* First_SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ED86471FC326B400D8A612 /* First_SurveyViewController.swift */; };
+		E5ED864A1FC33F3600D8A612 /* Second_SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ED86491FC33F3600D8A612 /* Second_SurveyViewController.swift */; };
+		E5ED864C1FC3428200D8A612 /* Third_SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ED864B1FC3428200D8A612 /* Third_SurveyViewController.swift */; };
+		E5ED864E1FC344C300D8A612 /* Review_ResponsesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ED864D1FC344C300D8A612 /* Review_ResponsesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E5533ADB1FC5E28000F09C2F /* Update_ResponsesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Update_ResponsesViewController.swift; sourceTree = "<group>"; };
+		E5533ADF1FC6191D00F09C2F /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		E5533AE11FCB3B5A00F09C2F /* SurveyHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyHistoryViewController.swift; sourceTree = "<group>"; };
+		E5533AE31FCB586900F09C2F /* ViewSurveyRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewSurveyRecordViewController.swift; sourceTree = "<group>"; };
 		E5ED862D1FC313FD00D8A612 /* Junior_Design_Final_Deliverable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Junior_Design_Final_Deliverable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5ED86301FC313FD00D8A612 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E5ED86321FC313FD00D8A612 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E5ED86351FC313FD00D8A612 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5ED86381FC313FD00D8A612 /* Junior_Design_Final_Deliverable.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Junior_Design_Final_Deliverable.xcdatamodel; sourceTree = "<group>"; };
 		E5ED863A1FC313FD00D8A612 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5ED863D1FC313FD00D8A612 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5ED863F1FC313FD00D8A612 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5ED86451FC3188E00D8A612 /* FirstLandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstLandingPageViewController.swift; path = ../FirstLandingPageViewController.swift; sourceTree = "<group>"; };
+		E5ED86471FC326B400D8A612 /* First_SurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = First_SurveyViewController.swift; sourceTree = "<group>"; };
+		E5ED86491FC33F3600D8A612 /* Second_SurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Second_SurveyViewController.swift; sourceTree = "<group>"; };
+		E5ED864B1FC3428200D8A612 /* Third_SurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Third_SurveyViewController.swift; sourceTree = "<group>"; };
+		E5ED864D1FC344C300D8A612 /* Review_ResponsesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review_ResponsesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +73,16 @@
 			isa = PBXGroup;
 			children = (
 				E5ED86301FC313FD00D8A612 /* AppDelegate.swift */,
-				E5ED86321FC313FD00D8A612 /* ViewController.swift */,
 				E5ED86341FC313FD00D8A612 /* Main.storyboard */,
+				E5533AE31FCB586900F09C2F /* ViewSurveyRecordViewController.swift */,
+				E5533AE11FCB3B5A00F09C2F /* SurveyHistoryViewController.swift */,
+				E5533ADB1FC5E28000F09C2F /* Update_ResponsesViewController.swift */,
+				E5533ADF1FC6191D00F09C2F /* ResultsViewController.swift */,
+				E5ED864D1FC344C300D8A612 /* Review_ResponsesViewController.swift */,
+				E5ED864B1FC3428200D8A612 /* Third_SurveyViewController.swift */,
+				E5ED86491FC33F3600D8A612 /* Second_SurveyViewController.swift */,
+				E5ED86471FC326B400D8A612 /* First_SurveyViewController.swift */,
+				E5ED86451FC3188E00D8A612 /* FirstLandingPageViewController.swift */,
 				E5ED863A1FC313FD00D8A612 /* Assets.xcassets */,
 				E5ED863C1FC313FD00D8A612 /* LaunchScreen.storyboard */,
 				E5ED863F1FC313FD00D8A612 /* Info.plist */,
@@ -141,7 +165,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5ED86391FC313FD00D8A612 /* Junior_Design_Final_Deliverable.xcdatamodeld in Sources */,
-				E5ED86331FC313FD00D8A612 /* ViewController.swift in Sources */,
+				E5ED86461FC3188E00D8A612 /* FirstLandingPageViewController.swift in Sources */,
+				E5533ADC1FC5E28000F09C2F /* Update_ResponsesViewController.swift in Sources */,
+				E5533AE21FCB3B5A00F09C2F /* SurveyHistoryViewController.swift in Sources */,
+				E5533AE41FCB586900F09C2F /* ViewSurveyRecordViewController.swift in Sources */,
+				E5ED864E1FC344C300D8A612 /* Review_ResponsesViewController.swift in Sources */,
+				E5ED864C1FC3428200D8A612 /* Third_SurveyViewController.swift in Sources */,
+				E5533AE01FC6191D00F09C2F /* ResultsViewController.swift in Sources */,
+				E5ED86481FC326B400D8A612 /* First_SurveyViewController.swift in Sources */,
+				E5ED864A1FC33F3600D8A612 /* Second_SurveyViewController.swift in Sources */,
 				E5ED86311FC313FD00D8A612 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +336,7 @@
 				E5ED86441FC313FD00D8A612 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
