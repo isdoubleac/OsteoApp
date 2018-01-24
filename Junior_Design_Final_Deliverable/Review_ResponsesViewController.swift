@@ -14,20 +14,19 @@ class Review_ResponsesViewController: UIViewController, UITableViewDelegate, UIT
     var firstAnswer: String?
     var secondAnswer: String?
     var thirdAnswer: String?
-    
     var questionSelected: String?
     
-    var questions : [String] = ["1. Hip Fracture importance: ", "2. Spinal Fracture importance: ", "3. Activity importance: "]
+    //array containing all of the questions
+    var full_questions: [String]?
     
-    var answers : [String] = [String]()
+    //array containing keywords for each question
+    var questions : [String] = ["1. Hip Fracture importance: ", "2. Spinal Fracture importance: ", "3. Activity importance: ", "4. Other Positive Factors: ", "5. Risk of breast cancer importance: ", "6. Risk of blood clots importance: ", "7. Risk of gastro-intestinal side-effects importance: ", "8. Other Negative Factors: "]
+    
+    //array of the inputted answers by the user
+    var answers : [Int]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        answers.append(firstAnswer!)
-        answers.append(secondAnswer!)
-        answers.append(thirdAnswer!)
-        
         // Do any additional setup after loading the view.
     }
 
@@ -40,16 +39,16 @@ class Review_ResponsesViewController: UIViewController, UITableViewDelegate, UIT
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 3
+        return 8
         
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = self.responseTable.dequeueReusableCell(withIdentifier: "responseCell", for: indexPath)
         
         
-        cell.textLabel!.text = questions[indexPath.row] + answers[indexPath.row]
+        cell.textLabel!.text = questions[indexPath.row] + String(answers![indexPath.row + 1])
         
         return cell
         
@@ -84,9 +83,10 @@ class Review_ResponsesViewController: UIViewController, UITableViewDelegate, UIT
         
         let record = NSManagedObject(entity: entity, insertInto: managedContext)
         
-        record.setValue(firstAnswer, forKeyPath: "firstQuestion")
-        record.setValue(secondAnswer, forKeyPath: "secondQuestion")
-        record.setValue(thirdAnswer, forKeyPath: "thirdQuestion")
+        //this needs to be done for all 8 questions
+        record.setValue(String(answers![1]), forKeyPath: "firstQuestion")
+        record.setValue(String(answers![2]), forKeyPath: "secondQuestion")
+        record.setValue(String(answers![3]), forKeyPath: "thirdQuestion")
         record.setValue(dateTime, forKeyPath: "dateTime")
         
         do {
@@ -106,8 +106,12 @@ class Review_ResponsesViewController: UIViewController, UITableViewDelegate, UIT
         if (segue.identifier == "goUpdateResponse") {
             
             if let destination = segue.destination as? Update_ResponsesViewController {
-                
+                //pass full questions?
+                destination.full_questions = self.full_questions
+                destination.questions = self.questions
                 destination.questionNumber = questionSelected
+                //passing full array of answers
+                destination.answers = self.answers
                 destination.firstAnswer = firstAnswer
                 destination.secondAnswer = secondAnswer
                 destination.thirdAnswer = thirdAnswer
