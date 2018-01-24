@@ -11,6 +11,10 @@ import UIKit
 class Update_ResponsesViewController: UIViewController {
     
     var questionNumber: String?
+    var full_questions: [String]?
+    var questions: [String]?
+    
+    var answers: [Int]?
     
     var firstAnswer: String?
     var secondAnswer: String?
@@ -27,6 +31,8 @@ class Update_ResponsesViewController: UIViewController {
         
         print(questionNumber)
         
+        //these cases need to be done for all 8 questions
+        
         if (questionNumber! == "1") {
             numQuestionLabel.text = "Question 1"
             
@@ -34,9 +40,9 @@ class Update_ResponsesViewController: UIViewController {
             question2Label.text = question1[1]
             question3Label.text = question1[2]
             
-            valueLabel.text = firstAnswer   
+            valueLabel.text = String(answers![1])
             
-            sliderValue.setValue((Float(firstAnswer!)!/10), animated: true)
+            sliderValue.setValue((Float(answers![1])/10), animated: true)
             
         } else if (questionNumber! == "2") {
             numQuestionLabel.text = "Question 2"
@@ -45,9 +51,9 @@ class Update_ResponsesViewController: UIViewController {
             question2Label.text = question2[1]
             question3Label.text = question2[2]
             
-            valueLabel.text = secondAnswer
+            valueLabel.text = String(answers![2])
             
-            sliderValue.setValue((Float(secondAnswer!)!/10), animated: true)
+            sliderValue.setValue((Float(answers![2])/10), animated: true)
             
             
         } else if (questionNumber! == "3") {
@@ -57,9 +63,9 @@ class Update_ResponsesViewController: UIViewController {
             question2Label.text = question3[1]
             question3Label.text = question3[2]
             
-            valueLabel.text = thirdAnswer
+            valueLabel.text = String(answers![3])
             
-            sliderValue.setValue((Float(thirdAnswer!)!/10), animated: true)
+            sliderValue.setValue((Float(answers![3])/10), animated: true)
             
         }
 
@@ -93,11 +99,11 @@ class Update_ResponsesViewController: UIViewController {
         valueLabel.text = String(intValue)
         
         if (questionNumber! == "1") {
-            firstAnswer = String(intValue)
+            answers![1] = intValue
         } else if (questionNumber! == "2") {
-            secondAnswer = String(intValue)
+            answers![2] = intValue
         } else if (questionNumber! == "3") {
-            thirdAnswer = String(intValue)
+            answers![3] = intValue
         }
         
     }
@@ -117,7 +123,8 @@ class Update_ResponsesViewController: UIViewController {
             
             if let destination = segue.destination as? Review_ResponsesViewController  {
                 
-                
+                destination.answers = self.answers
+                destination.full_questions = self.full_questions
                 destination.firstAnswer = firstAnswer
                 destination.secondAnswer = secondAnswer
                 destination.thirdAnswer = thirdAnswer
