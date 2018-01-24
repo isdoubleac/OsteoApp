@@ -15,12 +15,12 @@ class FirstLandingPageViewController: UIViewController {
         
         takeSurveyButton.layer.cornerRadius = 100
 
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view. This is a standard comment.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // Dispose of any resources that can be recreated. This is another standard comment.
     }
     
 
