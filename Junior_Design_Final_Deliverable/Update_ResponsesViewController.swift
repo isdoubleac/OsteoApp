@@ -114,6 +114,10 @@ class Update_ResponsesViewController: UIViewController {
         
     }
     
+    //@IBOutlet weak var bacToReview: UIButton!
+    @IBAction func backToReview(_ sender: Any) {
+        self.performSegue(withIdentifier: "goBack", sender: self)
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
@@ -130,6 +134,12 @@ class Update_ResponsesViewController: UIViewController {
                 destination.thirdAnswer = thirdAnswer
             }
             
+        }
+        if (segue.identifier == "goBack") {
+            if let destination = segue.destination as? Review_ResponsesViewController {
+                destination.answers = self.answers
+                destination.full_questions = self.full_questions
+            }
         }
     }
 
