@@ -106,6 +106,9 @@ class Review_ResponsesViewController: UIViewController, UITableViewDelegate, UIT
         if (segue.identifier == "goUpdateResponse") {
             
             if let destination = segue.destination as? Update_ResponsesViewController {
+                
+                //problem passing back from here; a lot of things are nil so I need to update
+                
                 //pass full questions?
                 destination.full_questions = self.full_questions
                 destination.questions = self.questions

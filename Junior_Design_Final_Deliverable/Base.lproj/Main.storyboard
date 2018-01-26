@@ -547,7 +547,7 @@
                                     <color key="titleColor" red="0.12941176469999999" green="0.26274509800000001" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="KLX-mb-CiH"/>
+                                    <action selector="backQuestion:" destination="5pt-m1-aos" eventType="touchUpInside" id="XMm-Ib-Hp8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAN-9j-VIm">
@@ -663,11 +663,12 @@
                         <outlet property="sliderValue" destination="LKX-LB-u1x" id="WmK-OP-u5z"/>
                         <outlet property="valueLabel" destination="r93-7k-lqk" id="M8t-6r-jhU"/>
                         <segue destination="r6W-S0-CyR" kind="show" identifier="goToResults" id="79P-NK-UYh"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="backToSplash" id="1Hp-MB-PCf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eio-pt-v3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="652" y="136.28185907046478"/>
+            <point key="canvasLocation" x="1174" y="18"/>
         </scene>
         <!--Review Responses View Controller-->
         <scene sceneID="Bh1-zy-BWE">
@@ -824,7 +825,7 @@
                                     <color key="titleColor" red="0.12941176469999999" green="0.26274509800000001" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="r6W-S0-CyR" kind="show" id="lbh-ca-ITC"/>
+                                    <action selector="backToReview:" destination="uhE-0V-vEn" eventType="touchUpInside" id="NXv-H2-Ldk"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuu-QI-pfy">
@@ -923,6 +924,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bacToReview" destination="K8V-HE-UEc" id="7rD-4T-coi"/>
                         <outlet property="numQuestionLabel" destination="wuu-QI-pfy" id="ZfY-re-gOz"/>
                         <outlet property="question1Label" destination="dx8-nd-6It" id="pwW-aj-Cx0"/>
                         <outlet property="question2Label" destination="ZNK-FM-ehX" id="rbK-r8-sjo"/>
@@ -930,6 +932,7 @@
                         <outlet property="sliderValue" destination="Guo-kU-UOl" id="aK3-2m-EfC"/>
                         <outlet property="valueLabel" destination="c71-sy-Awp" id="sXF-Hm-f2x"/>
                         <segue destination="r6W-S0-CyR" kind="show" identifier="updateCompleted" id="4rO-I1-55K"/>
+                        <segue destination="r6W-S0-CyR" kind="show" identifier="goBack" id="pQU-vw-cIg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8vL-GZ-at7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1086,7 +1089,6 @@
         <image name="white_clock" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ah8-TH-KPW"/>
         <segue reference="79P-NK-UYh"/>
         <segue reference="4YR-mx-QJf"/>
         <segue reference="1U8-Dq-XhG"/>
