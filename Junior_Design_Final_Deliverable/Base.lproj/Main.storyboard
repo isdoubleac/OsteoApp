@@ -699,6 +699,9 @@
                                 <state key="normal" title="&lt; Back">
                                     <color key="titleColor" red="0.12941176469999999" green="0.26274509800000001" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="backToQuestions:" destination="r6W-S0-CyR" eventType="touchUpInside" id="6hi-Kg-AC7"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have finished the survey." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxv-fC-uB2">
                                 <rect key="frame" x="16" y="88" width="343" height="30"/>
@@ -796,11 +799,12 @@
                         <outlet property="responseTable" destination="f3T-Zn-7tM" id="xXw-UE-iPx"/>
                         <segue destination="0wN-zY-cCg" kind="show" identifier="submitPressed" id="ah8-TH-KPW"/>
                         <segue destination="uhE-0V-vEn" kind="show" identifier="goUpdateResponse" id="zu0-Oy-tgL"/>
+                        <segue destination="5pt-m1-aos" kind="show" identifier="backToLastQuestion" id="5JX-o6-oPl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZHU-nk-8pF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2998" y="136"/>
+            <point key="canvasLocation" x="2998" y="-242"/>
         </scene>
         <!--Update Responses View Controller-->
         <scene sceneID="UMg-aC-8NH">
@@ -1090,7 +1094,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="79P-NK-UYh"/>
-        <segue reference="4YR-mx-QJf"/>
+        <segue reference="5JX-o6-oPl"/>
         <segue reference="1U8-Dq-XhG"/>
         <segue reference="DhH-fW-ezc"/>
     </inferredMetricsTieBreakers>
