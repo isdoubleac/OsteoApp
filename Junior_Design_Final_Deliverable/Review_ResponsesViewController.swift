@@ -61,7 +61,12 @@ class Review_ResponsesViewController: UIViewController, UITableViewDelegate, UIT
         self.performSegue(withIdentifier: "goUpdateResponse", sender: self) 
                 
     }
-
+    
+    @IBAction func backToQuestions(_ sender: Any) {
+        //submitPressed(self)
+        performSegue(withIdentifier: "backToLastQuestion", sender: self)
+    }
+    
     @IBAction func submitPressed(_ sender: Any) {
         
         let currentDateTime = Date()
@@ -120,6 +125,17 @@ class Review_ResponsesViewController: UIViewController, UITableViewDelegate, UIT
                 destination.thirdAnswer = thirdAnswer
             }
             
+        }
+        
+        if (segue.identifier == "backToLastQuestion") {
+            if let destination = segue.destination as? First_SurveyViewController {
+                destination.answers = self.answers!
+                destination.questions = self.full_questions!
+                destination.question_number = 8
+                //destination.sliderValue.value = Float(answers![8])/Float(10.0)
+                //destination.valueLabel.text = String(answers![8])
+                //destination.progressLabel.text = "8/8"
+            }
         }
     }
 
