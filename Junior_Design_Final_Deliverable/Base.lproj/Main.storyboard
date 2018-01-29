@@ -713,7 +713,7 @@
                                 <color key="textColor" red="0.12941176469999999" green="0.26274509800000001" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f3T-Zn-7tM">
+                            <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f3T-Zn-7tM">
                                 <rect key="frame" x="0.0" y="183" width="375" height="290"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -842,55 +842,34 @@
                                 <color key="textColor" red="0.00055467417270000003" green="0.21212742949999999" blue="0.44363249659999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How important is the ability to stay active" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dx8-nd-6It">
-                                <rect key="frame" x="16" y="119" width="343" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How important is the ability to stay active" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dx8-nd-6It">
+                                <rect key="frame" x="16" y="119" width="343" height="279"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="1cQ-7Z-Prn"/>
-                                    <constraint firstAttribute="width" constant="343" id="nD4-Kr-T8q"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" red="0.12941176469999999" green="0.26274509800000001" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How important is the ability to stay active" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNK-FM-ehX">
-                                <rect key="frame" x="16" y="157" width="343" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="343" id="Emw-6j-AA7"/>
-                                    <constraint firstAttribute="height" constant="30" id="Fbe-eW-L9R"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" red="0.12941176469999999" green="0.26274509800000001" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How important is the ability to stay active" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijV-Hb-ReF">
-                                <rect key="frame" x="16" y="195" width="343" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="d9V-Nt-wIi"/>
-                                    <constraint firstAttribute="width" constant="343" id="wH5-Yy-5mc"/>
+                                    <constraint firstAttribute="height" constant="279" id="RQq-Ar-I6a"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.12941176469999999" green="0.26274509800000001" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c71-sy-Awp">
-                                <rect key="frame" x="122" y="247" width="131" height="91"/>
+                                <rect key="frame" x="122" y="307" width="131" height="91"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="131" id="rqC-Sg-Urk"/>
-                                    <constraint firstAttribute="height" constant="91" id="xgd-me-wRO"/>
+                                    <constraint firstAttribute="height" constant="91" id="6cs-xy-vMQ"/>
+                                    <constraint firstAttribute="width" constant="131" id="fxf-GF-mxq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" red="0.12941176469999999" green="0.26274509800000001" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Guo-kU-UOl">
-                                <rect key="frame" x="14" y="386" width="347" height="31"/>
+                                <rect key="frame" x="14" y="446" width="347" height="31"/>
                                 <color key="tintColor" red="0.00055467417270000003" green="0.21212742949999999" blue="0.44363249659999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="sliderValueChanged:" destination="uhE-0V-vEn" eventType="valueChanged" id="34k-gA-M6L"/>
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLq-fX-2rS">
-                                <rect key="frame" x="120" y="499" width="134" height="53"/>
+                                <rect key="frame" x="120" y="559" width="134" height="53"/>
                                 <color key="backgroundColor" red="0.12941176469999999" green="0.26274509800000001" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="rYl-Ik-30b"/>
@@ -908,31 +887,26 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="c71-sy-Awp" firstAttribute="centerX" secondItem="pfe-Av-jhG" secondAttribute="centerX" id="4Rt-tN-grl"/>
-                            <constraint firstItem="ZNK-FM-ehX" firstAttribute="centerX" secondItem="pfe-Av-jhG" secondAttribute="centerX" id="CLS-7L-q4s"/>
-                            <constraint firstItem="dx8-nd-6It" firstAttribute="top" secondItem="wuu-QI-pfy" secondAttribute="bottom" constant="20" id="EBj-mf-moe"/>
                             <constraint firstItem="K8V-HE-UEc" firstAttribute="top" secondItem="lA0-kb-Nkv" secondAttribute="bottom" id="FHj-q6-bNU"/>
+                            <constraint firstItem="Guo-kU-UOl" firstAttribute="top" secondItem="c71-sy-Awp" secondAttribute="bottom" constant="48" id="FVq-L5-RIV"/>
+                            <constraint firstItem="dx8-nd-6It" firstAttribute="top" secondItem="wuu-QI-pfy" secondAttribute="bottom" constant="20" id="G7g-I3-2Qv"/>
                             <constraint firstItem="TLq-fX-2rS" firstAttribute="top" secondItem="Guo-kU-UOl" secondAttribute="bottom" constant="83" id="HH8-jw-pq4"/>
+                            <constraint firstItem="dx8-nd-6It" firstAttribute="trailing" secondItem="Guo-kU-UOl" secondAttribute="trailing" id="JY8-gZ-H94"/>
                             <constraint firstItem="wuu-QI-pfy" firstAttribute="centerX" secondItem="pfe-Av-jhG" secondAttribute="centerX" id="Jq9-kF-esT"/>
-                            <constraint firstItem="Guo-kU-UOl" firstAttribute="top" secondItem="c71-sy-Awp" secondAttribute="bottom" constant="48" id="KKD-SD-BqA"/>
-                            <constraint firstItem="ijV-Hb-ReF" firstAttribute="centerX" secondItem="pfe-Av-jhG" secondAttribute="centerX" id="PtO-Rp-XZP"/>
-                            <constraint firstItem="dx8-nd-6It" firstAttribute="centerX" secondItem="pfe-Av-jhG" secondAttribute="centerX" id="Yl4-q8-8bm"/>
+                            <constraint firstItem="dx8-nd-6It" firstAttribute="bottom" secondItem="c71-sy-Awp" secondAttribute="bottom" id="LAC-72-ppG"/>
+                            <constraint firstItem="c71-sy-Awp" firstAttribute="centerX" secondItem="Guo-kU-UOl" secondAttribute="centerX" id="Y0S-do-O06"/>
+                            <constraint firstItem="dx8-nd-6It" firstAttribute="leading" secondItem="Guo-kU-UOl" secondAttribute="leading" id="Z78-j0-vlc"/>
                             <constraint firstItem="wuu-QI-pfy" firstAttribute="top" secondItem="lA0-kb-Nkv" secondAttribute="bottom" constant="32" id="gAy-aY-vfO"/>
-                            <constraint firstItem="c71-sy-Awp" firstAttribute="top" secondItem="ijV-Hb-ReF" secondAttribute="bottom" constant="22" id="md9-3y-eCS"/>
                             <constraint firstItem="K8V-HE-UEc" firstAttribute="leading" secondItem="pfe-Av-jhG" secondAttribute="leading" id="pnE-Pm-73q"/>
                             <constraint firstItem="Guo-kU-UOl" firstAttribute="trailing" secondItem="pfe-Av-jhG" secondAttribute="trailingMargin" id="tIc-Cu-gEe"/>
                             <constraint firstItem="Guo-kU-UOl" firstAttribute="leading" secondItem="pfe-Av-jhG" secondAttribute="leadingMargin" id="u5x-tU-aH8"/>
                             <constraint firstItem="TLq-fX-2rS" firstAttribute="centerX" secondItem="pfe-Av-jhG" secondAttribute="centerX" id="up6-Bg-3eN"/>
-                            <constraint firstItem="ZNK-FM-ehX" firstAttribute="top" secondItem="dx8-nd-6It" secondAttribute="bottom" constant="8" id="vK5-kh-hTu"/>
-                            <constraint firstItem="ijV-Hb-ReF" firstAttribute="top" secondItem="ZNK-FM-ehX" secondAttribute="bottom" constant="8" id="zwX-br-uEp"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="bacToReview" destination="K8V-HE-UEc" id="7rD-4T-coi"/>
                         <outlet property="numQuestionLabel" destination="wuu-QI-pfy" id="ZfY-re-gOz"/>
                         <outlet property="question1Label" destination="dx8-nd-6It" id="pwW-aj-Cx0"/>
-                        <outlet property="question2Label" destination="ZNK-FM-ehX" id="rbK-r8-sjo"/>
-                        <outlet property="question3Label" destination="ijV-Hb-ReF" id="4LS-jh-QaU"/>
                         <outlet property="sliderValue" destination="Guo-kU-UOl" id="aK3-2m-EfC"/>
                         <outlet property="valueLabel" destination="c71-sy-Awp" id="sXF-Hm-f2x"/>
                         <segue destination="r6W-S0-CyR" kind="show" identifier="updateCompleted" id="4rO-I1-55K"/>
@@ -941,7 +915,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8vL-GZ-at7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2998" y="905"/>
+            <point key="canvasLocation" x="2997.5999999999999" y="904.49775112443785"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="kTD-8a-Lkp">
@@ -1093,7 +1067,7 @@
         <image name="white_clock" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="79P-NK-UYh"/>
+        <segue reference="4rO-I1-55K"/>
         <segue reference="5JX-o6-oPl"/>
         <segue reference="1U8-Dq-XhG"/>
         <segue reference="DhH-fW-ezc"/>

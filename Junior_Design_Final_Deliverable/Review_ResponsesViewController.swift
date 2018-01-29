@@ -20,7 +20,7 @@ class Review_ResponsesViewController: UIViewController, UITableViewDelegate, UIT
     var full_questions: [String]?
     
     //array containing keywords for each question
-    var questions : [String] = ["1. Hip Fracture importance: ", "2. Spinal Fracture importance: ", "3. Activity importance: ", "4. Other Positive Factors: ", "5. Risk of breast cancer importance: ", "6. Risk of blood clots importance: ", "7. Risk of gastro-intestinal side-effects importance: ", "8. Other Negative Factors: "]
+    var questions : [String] = ["1. Hip Fracture importance: ", "2. Spinal Fracture importance: ", "3. Activity importance: ", "4. Other Positive Factors: ", "5. Risk of breast cancer importance: ", "6. Risk of blood clots importance: ", "7. Risk of gastro-intestinal side-effects: ", "8. Other Negative Factors: "]
     
     //array of the inputted answers by the user
     var answers : [Int]?
@@ -92,6 +92,12 @@ class Review_ResponsesViewController: UIViewController, UITableViewDelegate, UIT
         record.setValue(String(answers![1]), forKeyPath: "firstQuestion")
         record.setValue(String(answers![2]), forKeyPath: "secondQuestion")
         record.setValue(String(answers![3]), forKeyPath: "thirdQuestion")
+        record.setValue(String(answers![4]), forKeyPath: "fourthQuestion")
+        record.setValue(String(answers![5]), forKeyPath: "fifthQuestion")
+        record.setValue(String(answers![6]), forKeyPath: "sixthQuestion")
+        record.setValue(String(answers![7]), forKeyPath: "seventhQuestion")
+        record.setValue(String(answers![8]), forKeyPath: "eighthQuestion")
+
         record.setValue(dateTime, forKeyPath: "dateTime")
         
         do {

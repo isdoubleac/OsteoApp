@@ -138,7 +138,7 @@ class First_SurveyViewController: UIViewController {
         //shown all questions so segue
         question_number!+=1
         if question_number == 9 {
-            
+            answers[question_number!-1] = Int(sliderValue.value*10)
             self.performSegue(withIdentifier: "goToResults", sender: self)
         } else {
             answers[question_number!-1] = Int(sliderValue.value*10)
