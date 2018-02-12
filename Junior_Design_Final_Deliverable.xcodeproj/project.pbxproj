@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6ACAEC2820301E3E0038C519 /* TreatmentOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACAEC2620301E3E0038C519 /* TreatmentOptionsViewController.swift */; };
 		E5533ADC1FC5E28000F09C2F /* Update_ResponsesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5533ADB1FC5E28000F09C2F /* Update_ResponsesViewController.swift */; };
 		E5533AE01FC6191D00F09C2F /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5533ADF1FC6191D00F09C2F /* ResultsViewController.swift */; };
 		E5533AE21FCB3B5A00F09C2F /* SurveyHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5533AE11FCB3B5A00F09C2F /* SurveyHistoryViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6ACAEC2620301E3E0038C519 /* TreatmentOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreatmentOptionsViewController.swift; path = ../../../../.Trash/TreatmentOptionsViewController.swift; sourceTree = "<group>"; };
 		E5533ADB1FC5E28000F09C2F /* Update_ResponsesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Update_ResponsesViewController.swift; sourceTree = "<group>"; };
 		E5533ADF1FC6191D00F09C2F /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		E5533AE11FCB3B5A00F09C2F /* SurveyHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyHistoryViewController.swift; sourceTree = "<group>"; };
@@ -69,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				E5ED86301FC313FD00D8A612 /* AppDelegate.swift */,
-				E5ED86341FC313FD00D8A612 /* Main.storyboard */,
 				E5533AE31FCB586900F09C2F /* ViewSurveyRecordViewController.swift */,
 				E5533AE11FCB3B5A00F09C2F /* SurveyHistoryViewController.swift */,
 				E5533ADB1FC5E28000F09C2F /* Update_ResponsesViewController.swift */,
@@ -77,6 +78,8 @@
 				E5ED864D1FC344C300D8A612 /* Review_ResponsesViewController.swift */,
 				E5ED86471FC326B400D8A612 /* First_SurveyViewController.swift */,
 				E5ED86451FC3188E00D8A612 /* FirstLandingPageViewController.swift */,
+				6ACAEC2620301E3E0038C519 /* TreatmentOptionsViewController.swift */,
+				E5ED86341FC313FD00D8A612 /* Main.storyboard */,
 				E5ED863A1FC313FD00D8A612 /* Assets.xcassets */,
 				E5ED863C1FC313FD00D8A612 /* LaunchScreen.storyboard */,
 				E5ED863F1FC313FD00D8A612 /* Info.plist */,
@@ -158,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ACAEC2820301E3E0038C519 /* TreatmentOptionsViewController.swift in Sources */,
 				E5ED86391FC313FD00D8A612 /* Junior_Design_Final_Deliverable.xcdatamodeld in Sources */,
 				E5ED86461FC3188E00D8A612 /* FirstLandingPageViewController.swift in Sources */,
 				E5533ADC1FC5E28000F09C2F /* Update_ResponsesViewController.swift in Sources */,
